@@ -103,3 +103,7 @@ SELECT *
 FROM Person.StateProvince
 WHERE Name LIKE '%O' ;
 
+SELECT *
+FROM Person.StateProvince
+WHERE Name LIKE 'AL____' ;
+
