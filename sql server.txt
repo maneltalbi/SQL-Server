@@ -3,3 +3,6 @@ select @@Servername  //server name
 use AdventureWorks2019
 Select *
 FROM HumanResources.Employee;
+
+Select BusinessEntityID,JobTitle
+FROM HumanResources.Employee;
