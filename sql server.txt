@@ -74,3 +74,7 @@ WHERE MiddleName IS NULL ;
 SELECT FirstName, MiddleName, LastName 
 FROM Person.Person
 WHERE MiddleName IS NOT NULL ;
+
+SELECT *
+FROM HumanResources.Employee
+WHERE MaritalStatus = 'S' AND Gender = 'F'; 
