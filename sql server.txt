@@ -9,3 +9,6 @@ FROM HumanResources.Employee;
 
 Select JobTitle
 FROM HumanResources.Employee;
+
+Select DISTINCT JobTitle
+FROM HumanResources.Employee;
