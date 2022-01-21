@@ -86,3 +86,7 @@ WHERE JobTitle = 'Design ENgineer' OR JobTitle = 'Research and Development Manag
 SELECT *
 FROM HumanResources.Employee
 WHERE JobTitle IN ('Design ENgineer', 'Research and Development Manager');
+
+SELECT *
+FROM HumanResources.Employee
+WHERE BusinessEntityID IN (1,5,10,15);
