@@ -94,3 +94,7 @@ WHERE BusinessEntityID IN (1,5,10,15);
 SELECT *
 FROM HumanResources.Employee
 WHERE BusinessEntityID BETWEEN 1 AND 50 ;
+
+SELECT *
+FROM Person.StateProvince
+WHERE Name LIKE 'AL%' ;
