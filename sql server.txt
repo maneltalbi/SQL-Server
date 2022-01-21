@@ -38,3 +38,7 @@ FROM Purchasing.PurchaseOrderHeader;
 
 SELECT SubTotal, TaxAmt, SubTotal - TaxAmt AS a
 FROM Purchasing.PurchaseOrderHeader;
+
+SELECT SubTotal, TaxAmt, SubTotal / TaxAmt AS a
+FROM Purchasing.PurchaseOrderHeader
+WHERE TaxAmt > 0 ;
