@@ -20,3 +20,7 @@ WHERE JobTitle = 'Research and Development Manager';
 Select DISTINCT BusinessEntityID,JobTitle
 FROM HumanResources.Employee
 WHERE BusinessEntityID > 50;
+
+Select DISTINCT BusinessEntityID,JobTitle
+FROM HumanResources.Employee
+WHERE BusinessEntityID >= 50;
