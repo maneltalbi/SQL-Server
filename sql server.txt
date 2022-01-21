@@ -134,3 +134,7 @@ GROUP BY SalesOrderId;
 SELECT SalesOrderID, COUNT(UnitPrice) AS CountUnitPricePerSales
 FROM Sales.SalesOrderDetail
 GROUP BY SalesOrderId;
+
+SELECT SalesOrderID, MAX(UnitPrice) AS MaxUnitPricePerSales
+FROM Sales.SalesOrderDetail
+GROUP BY SalesOrderId;
