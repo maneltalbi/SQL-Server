@@ -138,3 +138,7 @@ GROUP BY SalesOrderId;
 SELECT SalesOrderID, MAX(UnitPrice) AS MaxUnitPricePerSales
 FROM Sales.SalesOrderDetail
 GROUP BY SalesOrderId;
+
+SELECT SalesOrderID, MIN(UnitPrice) AS MinUnitPricePerSales
+FROM Sales.SalesOrderDetail
+GROUP BY SalesOrderId;
