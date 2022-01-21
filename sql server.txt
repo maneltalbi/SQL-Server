@@ -119,3 +119,10 @@ SELECT FirstName, LastName, MiddleName
 FROM Person.Person
 WHERE MiddleName IS NOT NULL
 ORDER BY FirstName DESC, LastName ASC;
+
+SELECT SalesOrderID, UnitPrice
+FROM Sales.SalesOrderDetail;
+
+SELECT SalesOrderID, SUM(UnitPrice) AS TotalUnitPricePerSales
+FROM Sales.SalesOrderDetail
+GROUP BY SalesOrderId;
