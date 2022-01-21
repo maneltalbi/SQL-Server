@@ -107,3 +107,6 @@ SELECT *
 FROM Person.StateProvince
 WHERE Name LIKE 'AL____' ;
 
+SELECT City, PostalCode
+FROM Person.Address
+ORDER BY City ;
