@@ -52,3 +52,6 @@ FROM Purchasing.PurchaseOrderHeader
 WHERE SubTotal + TaxAmt >500 ;
 
 ==> the order of execution:  FROM-->WHERE-->SELECT
+
+SELECT *
+FROM Person.Person;
