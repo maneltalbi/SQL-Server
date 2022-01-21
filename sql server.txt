@@ -130,3 +130,7 @@ GROUP BY SalesOrderId;
 SELECT SalesOrderID, AVG(UnitPrice) AS AvgUnitPricePerSales
 FROM Sales.SalesOrderDetail
 GROUP BY SalesOrderId;
+
+SELECT SalesOrderID, COUNT(UnitPrice) AS CountUnitPricePerSales
+FROM Sales.SalesOrderDetail
+GROUP BY SalesOrderId;
