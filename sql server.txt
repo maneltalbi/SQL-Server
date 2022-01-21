@@ -58,3 +58,7 @@ FROM Person.Person;
 
 SELECT FirstName, MiddleName, LastName
 FROM Person.Person;
+
+SELECT FirstName, MiddleName, LastName , FirstName + MiddleName +  
+       LastName AS FullName
+FROM Person.Person;
