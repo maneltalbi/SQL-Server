@@ -35,3 +35,6 @@ WHERE BusinessEntityID < 50;
 
 SELECT SubTotal, TaxAmt, SubTotal + TaxAmt AS SubTotalWithTaxAmt
 FROM Purchasing.PurchaseOrderHeader;
+
+SELECT SubTotal, TaxAmt, SubTotal - TaxAmt AS a
+FROM Purchasing.PurchaseOrderHeader;
