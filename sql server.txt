@@ -110,3 +110,7 @@ WHERE Name LIKE 'AL____' ;
 SELECT City, PostalCode
 FROM Person.Address
 ORDER BY City ;
+
+SELECT City, PostalCode
+FROM Person.Address
+ORDER BY City DESC ;
