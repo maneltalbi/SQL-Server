@@ -126,3 +126,7 @@ FROM Sales.SalesOrderDetail;
 SELECT SalesOrderID, SUM(UnitPrice) AS TotalUnitPricePerSales
 FROM Sales.SalesOrderDetail
 GROUP BY SalesOrderId;
+
+SELECT SalesOrderID, AVG(UnitPrice) AS AvgUnitPricePerSales
+FROM Sales.SalesOrderDetail
+GROUP BY SalesOrderId;
