@@ -1,0 +1,3 @@
+select @@version; //Version of sql server
+select @@Servername  //server name
+use AdventureWorks2019
