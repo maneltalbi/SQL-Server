@@ -42,3 +42,13 @@ FROM Purchasing.PurchaseOrderHeader;
 SELECT SubTotal, TaxAmt, SubTotal / TaxAmt AS a
 FROM Purchasing.PurchaseOrderHeader
 WHERE TaxAmt > 0 ;
+
+SELECT SubTotal, TaxAmt, SubTotal + TaxAmt AS SubTotalWithTaxAmt
+FROM Purchasing.PurchaseOrderHeader;
+WHERE SubTotalWithTaxAmt > 500 ;                                    //Error
+
+SELECT SubTotal, TaxAmt, SubTotal + TaxAmt AS SubTotalWithAmt
+FROM Purchasing.PurchaseOrderHeader
+WHERE SubTotal + TaxAmt >500 ;
+
+==> the order of execution:  FROM-->WHERE-->SELECT
