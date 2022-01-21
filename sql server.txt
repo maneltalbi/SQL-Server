@@ -6,3 +6,6 @@ FROM HumanResources.Employee;
 
 Select BusinessEntityID,JobTitle
 FROM HumanResources.Employee;
+
+Select JobTitle
+FROM HumanResources.Employee;
