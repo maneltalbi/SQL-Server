@@ -98,3 +98,8 @@ WHERE BusinessEntityID BETWEEN 1 AND 50 ;
 SELECT *
 FROM Person.StateProvince
 WHERE Name LIKE 'AL%' ;
+
+SELECT *
+FROM Person.StateProvince
+WHERE Name LIKE '%O' ;
+
