@@ -55,3 +55,6 @@ WHERE SubTotal + TaxAmt >500 ;
 
 SELECT *
 FROM Person.Person;
+
+SELECT FirstName, MiddleName, LastName
+FROM Person.Person;
