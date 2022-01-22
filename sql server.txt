@@ -165,3 +165,7 @@ From Sales.SalesOrderHeader;
 SELECT SalesOrderId, OrderDate, MONTH(OrderDate) AS extractMonth
 From Sales.SalesOrderHeader;
 
+SELECT SalesOrderId, OrderDate, YEAR(OrderDate) AS extractYear
+From Sales.SalesOrderHeader;
+
+
