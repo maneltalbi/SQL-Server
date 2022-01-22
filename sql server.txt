@@ -168,4 +168,5 @@ From Sales.SalesOrderHeader;
 SELECT SalesOrderId, OrderDate, YEAR(OrderDate) AS extractYear
 From Sales.SalesOrderHeader;
 
+SELECT CURRENT_TIMESTAMP;
 
