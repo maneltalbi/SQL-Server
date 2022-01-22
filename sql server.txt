@@ -213,3 +213,10 @@ FROM Purchasing.PurchaseOrderDetail pod
  ON pod.PurchaseOrderDetailID = poh.PurchaseOrderID
 
 
+SELECT p.BusinessEntityID, p.FirstName, p.LastName, bea.BusinessEntityID, bea.AddressID
+FROM Person.Person p
+LEFT JOIN
+Person.BusinessEntityAddress bea
+ON p.BusinessEntityID = bea.BusinessEntityID
+
+
