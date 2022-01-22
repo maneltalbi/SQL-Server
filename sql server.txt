@@ -161,3 +161,7 @@ From Person.Person;
 
 SELECT SalesOrderId, OrderDate, DAY(OrderDate) AS extractDay
 From Sales.SalesOrderHeader;
+
+SELECT SalesOrderId, OrderDate, MONTH(OrderDate) AS extractMonth
+From Sales.SalesOrderHeader;
+
