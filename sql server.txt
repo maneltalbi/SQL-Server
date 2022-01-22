@@ -146,3 +146,6 @@ GROUP BY SalesOrderId;
 SELECT FirstName, MiddleName, LastName,
        CONCAT(FirstName,' ', MiddleName,' ', LastName) AS FullName
 From Person.Person
+
+SELECT FirstName, LEN(FirstName)
+From Person.Person
