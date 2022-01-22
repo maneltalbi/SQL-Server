@@ -158,3 +158,6 @@ From Person.Person;
 
 SELECT FirstName, SUBSTRING(FirstName,3,4) AS ExtractASubstring
 From Person.Person;
+
+SELECT SalesOrderId, OrderDate, DAY(OrderDate) AS extractDay
+From Sales.SalesOrderHeader;
