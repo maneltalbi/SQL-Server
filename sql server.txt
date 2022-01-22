@@ -200,4 +200,10 @@ UNION
 SELECT CustomerID fROM Sales.Customer
 
 
+SELECT BusinessEntityID FROM HumanResources.Employee
+UNION ALL
+SELECT BusinessEntityID FROM Person.Person
+UNION ALL
+SELECT CustomerID fROM Sales.Customer
+
 
