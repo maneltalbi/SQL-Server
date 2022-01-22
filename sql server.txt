@@ -170,3 +170,9 @@ From Sales.SalesOrderHeader;
 
 SELECT CURRENT_TIMESTAMP;
 
+SELECT SalesOrderId, SUM(UnitPrice) AS TotalUnitPricePerSales
+From Sales.SalesOrderDetail
+WHERE SUM(UnitPrice) > 10000                                              //ERROR ==> use HAVING 
+GROUP BY SalesOrderId
+
+
