@@ -206,4 +206,10 @@ SELECT BusinessEntityID FROM Person.Person
 UNION ALL
 SELECT CustomerID fROM Sales.Customer
 
+SELECT pod.PurchaseOrderID, pod.PurchaseOrderDetailId, poh.OrderDate
+FROM Purchasing.PurchaseOrderDetail pod
+   INNER JOIN
+ Purchasing.PurchaseOrderHeader poh
+ ON pod.PurchaseOrderDetailID = poh.PurchaseOrderID
+
 
