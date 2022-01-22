@@ -152,3 +152,6 @@ From Person.Person
 
 SELECT FirstName, LEFT(FirstName,2) AS ExtractFromLeft
 From Person.Person;
+
+SELECT FirstName, RIGHT(FirstName,3) AS ExtractFromRight
+From Person.Person;
