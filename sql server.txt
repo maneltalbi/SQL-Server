@@ -193,5 +193,11 @@ WHERE PurchaseOrderID IN
   SELECT PurchaseOrderID FROM Purchasing.PurchaseOrderDetail WHERE PurchaseOrderDetailID >5
 )
 
+SELECT BusinessEntityID FROM HumanResources.Employee
+UNION
+SELECT BusinessEntityID FROM Person.Person
+UNION
+SELECT CustomerID fROM Sales.Customer
+
 
 
