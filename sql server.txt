@@ -180,4 +180,18 @@ From Sales.SalesOrderDetail
 GROUP BY SalesOrderId
 HAVING SUM(UnitPrice) > 10000
 
+SELECT SalesOrderId, SUM(UnitPrice) AS TotalUnitPricePerSales
+From Sales.SalesOrderDetail
+WHERE SalesOrderID>50000
+GROUP BY SalesOrderId
+HAVING SUM(UnitPrice) > 10000
+ORDER BY SalesOrderId DESC;
+
+SELECT PurchaseOrderID, EmployeeID FROM Purchasing.PurchaseOrderHeader
+WHERE PurchaseOrderID IN
+(
+  SELECT PurchaseOrderID FROM Purchasing.PurchaseOrderDetail WHERE PurchaseOrderDetailID >5
+)
+
+
 
