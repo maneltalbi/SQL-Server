@@ -155,3 +155,6 @@ From Person.Person;
 
 SELECT FirstName, RIGHT(FirstName,3) AS ExtractFromRight
 From Person.Person;
+
+SELECT FirstName, SUBSTRING(FirstName,3,4) AS ExtractASubstring
+From Person.Person;
