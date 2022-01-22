@@ -231,4 +231,10 @@ RIGHT OUTER JOIN
 Person.BusinessEntityAddress bea
 ON p.BusinessEntityID = bea.BusinessEntityID
 
+SELECT p.BusinessEntityID, p.FirstName, p.LastName, bea.BusinessEntityID, bea.AddressID
+FROM Person.Person p
+FULL OUTER JOIN
+Person.BusinessEntityAddress bea
+ON p.BusinessEntityID = bea.BusinessEntityID
+
 
