@@ -238,13 +238,24 @@ Person.BusinessEntityAddress bea
 ON p.BusinessEntityID = bea.BusinessEntityID
 
 CREATE TABLE CovidStatus
-              (CovidID INT IDENTITY(1,3),
-			  CovidDate DateTime,
-			  DailyConfirmedCases INT,
-			  DailyDeaths smallint,
-			  Country Varchar(25),
-			  CovidFlag bit,
-			  TotalLosss Money 
-			  );
+(CovidID INT IDENTITY(1,3),
+CovidDate DateTime,	  
+DailyConfirmedCases INT,
+DailyDeaths smallint,
+Country Varchar(25),
+CovidFlag bit,
+TotalLosss Money 
+);
+
+CREATE TABLE ItemHeader
+(
+ItemID INT PRIMARY KEY,
+ItemName VARCHAR(50) UNIQUE,
+ItemOrderDate datetime NOT NULL ,
+ItemShipDate datetime NOT NULL,
+ItemAmount Money 
+);
+
+
 
 
