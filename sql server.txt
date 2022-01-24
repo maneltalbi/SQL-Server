@@ -293,4 +293,6 @@ DELETE FROM CovidStatus where Country= 'Brazil' AND CovidFlag=1;
 
 DELETE  TOP (2) FROM CovidStatus;
 
+DROP TABLE CovidStatus;
+
 
