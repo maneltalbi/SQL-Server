@@ -283,4 +283,7 @@ VALUES
 ALTER TABLE CovidStatus
 ADD continent char(12);
 
+ALTER TABLE CovidStatus
+ALTER column continent varchar(15);
+
 
