@@ -289,4 +289,6 @@ ALTER column continent varchar(15);
 Alter TABLE CovidStatus
 DROP column continent;
 
+DELETE FROM CovidStatus where Country= 'Brazil' AND CovidFlag=1;
+
 
