@@ -257,5 +257,19 @@ ItemAmount Money
 );
 
 
+CREATE TABLE ItemDetail
+(
+ItemID INT,
+ItemDetailID INT,
+ItemDueDate datetime NOT NULL,
+ItemOrderQty SMALLINT NOT NULL,
+ItemReceivedQty SMALLINT NOT NULL,
+ItemShipDate datetime,
+ItemAmount Money,
+CONSTRAINT ItemDetailPK PRIMARY KEY(ItemID,ItemDetailID),
+CONSTRAINT ItemDetailFK FOREIGN KEY (ItemID) REFERENCES ItemHeader(ItemID)
+);
+
+
 
 
